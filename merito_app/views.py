@@ -5,9 +5,10 @@ from .models import Article
 # Create your views here.
 
 def test_response(request):
-    # Initialize HttpRequest with a single argument
-    http_request = HttpRequest()
-    return HttpResponse("Hello, World!")
+    context = {
+        'variable_name': 'Hello from Django!',  # You can pass data to the template here
+    }
+    return render(request, 'articles.html', context)
 
 def all_articles(request):
     title_page = 'Tytuł strony'
