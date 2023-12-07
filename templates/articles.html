@@ -1,0 +1,80 @@
+{% load static %}
+
+<html lang="en-EN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- Include Bootstrap JavaScript from a CDN (Optional) -->
+        <link rel="stylesheet" href="{% static 'index.css' %}">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <img src="https://www.merito.pl/sites/wsb/files/animLogo.gif" alt="Uczelnie WSB Merito" title="Uczelnie WSB Merito">
+                    </li>
+                    <li>
+                        <a href="#">Poznaj WSB Merito</a>
+                    </li>
+                    <li>
+                        <a href="#">Studia i szkolenia</a>
+                    </li>
+                    <li>
+                        <a href="#">Badania i nauka</a>
+                    </li>
+                    <li>
+                        <a href="#">Współpraca z biznesem</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="img-container">
+                <img src="https://www.merito.pl/sites/wsb/files/styles/slider_big/public/media/image/zdjecie_lauchingowe.png?itok=TRIvpK-2" alt="photo">
+            </div>
+
+            <div class="offer-container">
+                <div class="offer-list">
+                    <h2 class="offer-header">Zobacz ofertę</h2>
+                    <ul>
+                        <li>
+                            <a href="#">Studia I stopnia</a>
+                        </li>
+                        <li>
+                             <a href="#">Studia II stopnia</a>
+                        </li>
+                        <li>
+                             <a href="#">Studia II stopnia z podyplomowymi</a>
+                        </li>
+                        <li>
+                             <a href="#">Studia jednolite magisterskie</a>
+                        </li>
+                        <li>
+                            <a href="#">Studia podyplomowe</a>
+                        </li>
+                        <li>
+                            <a href="#">Studia MBA i EMBA</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-offer">
+                    <h2 class="offer-header">Znajdź studia dla siebie</h2>
+                </div>
+                <div class="sign-in">
+                    <h2 class="offer-header">Zapisz się online</h2>
+                    <p>Już wiesz co chcesz studiować? Przejdź do zapisów online</p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

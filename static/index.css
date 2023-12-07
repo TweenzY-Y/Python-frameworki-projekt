@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+
+--MAIN-TEXT: #22284f;
+--HOVER-TEXT: #e83962;
+}
+
+nav {
+background: white;
+padding: 1rem;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+}
+
+header nav ul li a{
+    text-decoration:none;
+    color: var(--MAIN-TEXT);
+    font-weight: 900;
+}
+
+header nav ul li:hover a{
+    color: var(--HOVER-TEXT);
+    cursor:pointer;
+}
+
+main{
+text-align: center;
+}
+
+main img{
+height: 35em;
+position: absolute;
+top: 0px;
+z-index: -100;
+}
+
+.img-container{
+
+display:flex;
+justify-content: center;
+width: 100vw;
+height: 30rem;
+}
+
+.offer-container{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+}
+
+.offer-container .offer-list ul{
+list-style: none;
+text-align: left;
+}
+
+.offer-container .offer-list ul li a
+{
+text-decoration: none;
+color: var(--MAIN);
+font-weight: 600;
+}
+
+.offer-container .offer-list ul li:hover a{
+    color: var(--HOVER-TEXT);
+    cursor:pointer;
+}
+
+.offer-header{
+    color: var(--MAIN-TEXT);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.search-offer{
+    background:#e4e5eb;
+}
